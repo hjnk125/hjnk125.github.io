@@ -1,0 +1,144 @@
+/* 태블릿 */
+@media (max-width: 768px) {
+    .title {
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 55px;
+    }
+
+    .subtitle {
+        font-size: 22px;
+        line-height: 36px;
+    }
+
+
+    .font_regular {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    /*********** header ***********/
+    header {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 18px 0;
+        z-index: 99;
+        transition: all 0.5s;
+    }
+
+    .header_content {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+
+    .header_content > img {
+        height: 24px;
+    }
+
+    .header_icon {
+        display: inline-block;
+        position: absolute;
+        top: 18px;
+        right: 36px;
+        cursor: pointer;
+    }
+
+    .header_nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0 18px;
+        transition: transform .7s ease;
+    }
+
+    .header_nav > a {
+        margin-left: 0;
+        margin-top: 24px;
+    }
+
+    .header_nav > a.contact > img {
+        height: 36px;
+    }
+
+
+    /*********** content ***********/
+    .content {
+        width: 100%;
+    }
+
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+        padding: 36px;
+    }
+
+    /*********** intro section ***********/
+    #intro {
+        padding: 0 36px;
+    }
+
+    /*********** skill section ***********/
+    #skill .row {
+        padding-top: 160px;
+        margin-bottom: 108px;
+        text-align: center;
+    }
+
+    #skill img {
+        width: 70%;
+        height: fit-content;
+    }
+
+
+    /*********** project section ***********/
+    #project {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    #project > h4.with_line {
+        padding-top: 18px;
+    }
+
+    #project .row {
+        width: 50%;
+    }
+
+    #project .row:nth-of-type(2n+1) {
+        flex-direction: column;
+    }
+
+    #project .col > img {
+        width: 100%;
+        max-height: 260px;
+        object-fit: contain;
+    }
+
+    .project_title > h4 {
+        font-size: 32px;
+        margin-left: 12px;
+    }
+
+    .project_title > img {
+        width: fit-content;
+        height: 36px;
+        object-fit: contain;
+    }
+
+
+    /*********** footer ***********/
+    .footer_content {
+        padding: 60px 36px;
+    }
+
+}

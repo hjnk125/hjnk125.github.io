@@ -1,0 +1,19 @@
+/* 모바일 */
+@media (max-width: 480px) {
+    .go_top {
+        width: 60px;
+        height: 60px;
+    }
+
+    /*********** project section ***********/
+    #project {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    #project .row {
+        width: 100%;
+    }
+}

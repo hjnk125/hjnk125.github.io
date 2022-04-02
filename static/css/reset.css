@@ -1,0 +1,124 @@
+@charset "utf-8";
+@import "pretendard.css";
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 16px;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    color: #1D201F;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, select, input, textarea, p, blockquote, th, td, figure, figcaption {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer, section, article, aside, nav, hgroup, details, menu, figure, figcaption {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    font-size: 100%;
+}
+
+img, legend, fieldset, button {
+    border: none;
+}
+
+input, select, textarea {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: inherit;
+    font-weight: inherit;
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+table th, table td {
+    word-break: keep-all;
+}
+
+caption, legend {
+    width: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    font-size: 0;
+}
+
+ul, ol, li {
+    list-style-type: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+a, a:link, a:visited, a:active {
+    text-decoration: none;
+    word-break: keep-all;
+}
+
+a[class~="btn"] {
+    vertical-align: middle;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    text-decoration: none;
+}
+
+a, button {
+    margin: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+}
+
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+
+/* 이미지 선명도 */
+img {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: high-quality;
+    -ms-interpolation-mode: nearest-neighbor;
+}
