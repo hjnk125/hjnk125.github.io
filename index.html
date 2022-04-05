@@ -9,13 +9,14 @@
     <link rel="stylesheet" type="text/css" href="static/css/tablet.css">
     <link rel="stylesheet" type="text/css" href="static/css/mobile.css">
 
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="static/favicon.ico">
 
     <!-- live reload -->
     <script type="text/javascript" src="https://livejs.com/live.js"></script>
 
     <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
     <!-- icon -->
     <link rel="stylesheet"
@@ -55,12 +56,12 @@
                         <img src="static/image/stack.png" alt="stack" />
                     </div>
                     <div class="col">
-                        <p class="font_regular">
-                            Lorem ipsum dolor sit amet.<br />
-                            Aut quia vero id omnis nulla qui magnam enim<br />
-                            est corporis eaque et sunt assumenda.<br />
-                            Cumque eveniet et pariatur modi<br />
-                            et quidem perspiciatis cum placeat rerum
+                        <p class="font_desc">
+                            항상 새로운 배움에 도전하는 프론트엔드 개발자 김호정입니다.<br />
+                            실을 짜서 정교한 작품을 만드는 섬유미술처럼,<br />
+                            코드를 아름답게 짜서 유저가 사용하고 싶은 서비스를 만듭니다.<br />
+                            JavaScript와 React를 주 언어로 사용하고 있으며,<br />
+                            현재 TypeScript와 Redux, GraphQL에 관심을 가지고 학습 중에 있습니다.
                         </p>
                     </div>
                 </div>
@@ -117,7 +118,7 @@
 
                 <div class="row">
                     <div class="col">
-                        <img src="static/image/donforget_mac.png" alt="donforget" />
+                        <img src="static/image/donforget_proj.png" alt="donforget" />
                     </div>
                     <div class="col">
                         <div class="project_info">
@@ -143,7 +144,7 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <img src="static/image/getupmate_mobile.png" alt="getupmate" />
+                        <img src="static/image/getupmate_proj.png" alt="getupmate" />
                     </div>
                     <div class="col">
                         <div class="project_info">
@@ -176,23 +177,34 @@
                         </a>
                     </p>
                     <p>
-                        <a class="font_white" href="https://pawdly.oopy.io/1b77673f-b6c8-44ab-bd3b-390c2beb8294">
+                        <a class="font_white" href="https://github.com/hjnk125/">
                             GitHub
                         </a>
+                    </p>
+                    <br />
+                    <p class="font_white">
+                        Portfolio 2022 / Thank you for visiting :)
                     </p>
                 </div>
             </div>
         </footer>
         <img class="black_bg" src="static/image/black.png" alt="background" />
-        <img class="go_top" src="static/image/top_btn.png" alt="top" style="display: none;"
-            onclick="window.scrollTo(0, 0);" />
+        <a href="#" id="top_btn" style="display: none;">
+            <img class="go_top" src="static/image/top_btn.png" alt="top" />
+        </a>
     </div>
 
     <script>
-        let $header = $("header");
-        let $nav = $(".header_nav");
+        let $wrap = $(".wrap"),
+            $header = $("header"),
+            $nav = $(".header_nav"),
+            $top_btn = $("#top_btn");
 
         $(function () {
+            $top_btn.click(function () {
+                $wrap.animate({ scrollTop: 0 });
+            });
+
             if ($(window).width() < 768) {
                 $nav.hide();
             }
@@ -208,14 +220,13 @@
             });
         })
 
-        $(window).scroll(function () {
-            let scroll = $(window).scrollTop();
-            let height = $(window).innerHeight();
+        $wrap.on('scroll', function () {
+            let scroll = $wrap.scrollTop();
+            let height = $wrap.innerHeight();
 
-            let $top_btn = $(".go_top");
             scroll > height * 0.3 ? $top_btn.show() : $top_btn.hide();
 
-            if ($(window).width() < 768) {
+            if ($wrap.width() < 768) {
                 if (scroll >= 50) {
                     $header.css("background", "#1D201F")
                 } else {
@@ -227,9 +238,8 @@
         });
 
         $(window).resize(function () {
-            $(window).width() < 768 ? $nav.hide() : $nav.show();
+            $wrap.width() < 768 ? $nav.hide() : $nav.show();
         });
-
     </script>
 </body>
 

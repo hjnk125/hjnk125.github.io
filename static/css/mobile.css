@@ -1,6 +1,6 @@
 /* 모바일 */
 @media (max-width: 480px) {
-    .go_top {
+    #top_btn > img {
         width: 60px;
         height: 60px;
     }
