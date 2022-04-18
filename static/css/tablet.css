@@ -137,7 +137,6 @@
     }
 
     .project_title>img {
-        width: fit-content;
         height: 36px;
         object-fit: contain;
     }
