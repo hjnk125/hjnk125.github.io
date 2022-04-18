@@ -1,5 +1,7 @@
 /* 데스크탑 */
-html, body, .wrap {
+html,
+body,
+.wrap {
     scroll-behavior: smooth !important;
 }
 
@@ -61,7 +63,7 @@ body {
     transform: translateX(-50%);
 }
 
-#top_btn > img {
+#top_btn>img {
     position: fixed;
     display: block;
     width: 80px;
@@ -80,8 +82,8 @@ header {
     width: 100%;
     padding: 37px 0;
     background: transparent;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
 }
 
 .header_content {
@@ -95,7 +97,7 @@ header {
     padding-right: 24px;
 }
 
-.header_content > img {
+.header_content>img {
     height: 32px;
 }
 
@@ -113,18 +115,18 @@ header {
     flex-grow: 1;
 }
 
-.header_nav > a {
+.header_nav>a {
     font-weight: 500;
     font-size: 18px;
     margin-left: 64px;
     cursor: pointer;
 }
 
-.header_nav > a.contact {
+.header_nav>a.contact {
     margin-left: auto;
 }
 
-.header_nav > a.contact > img {
+.header_nav>a.contact>img {
     object-fit: contain;
     height: 56px;
 }
@@ -182,7 +184,7 @@ section {
     margin-bottom: 108px;
 }
 
-#project > h4.with_line {
+#project>h4.with_line {
     display: flex;
     flex-basis: 100%;
     width: 100%;
@@ -191,8 +193,8 @@ section {
     margin-bottom: 32px;
 }
 
-#project > h4.with_line::before,
-#project > h4.with_line::after {
+#project>h4.with_line::before,
+#project>h4.with_line::after {
     content: "";
     flex-grow: 1;
     background: #1D201F;
@@ -210,7 +212,7 @@ section {
     flex-direction: row-reverse;
 }
 
-#project .col > img {
+#project .col>img {
     width: 100%;
     max-height: 510px;
     object-fit: contain;
@@ -221,37 +223,38 @@ section {
     flex-direction: column;
 }
 
-.project_info > ul > li,
-.project_info > p {
+.project_info>ul>li,
+.project_info>p {
     font-weight: 500;
     font-size: 18px;
     line-height: 36px;
     margin-left: 8px;
 }
 
-.project_info > ul > li {
+.project_info>ul>li {
     margin-left: 24px;
     list-style: disc;
 }
 
 .project_title {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.project_title > span.material-icons-outlined {
+.project_title>span.material-icons-outlined {
     font-size: 36px;
 }
 
-.project_title > h4 {
+.project_title>h4 {
     font-weight: 600;
     font-size: 36px;
     margin-left: 16px;
     white-space: nowrap;
 }
 
-.project_title > img {
+.project_title>img {
     width: fit-content;
     height: 60px;
     object-fit: contain;
